@@ -7,37 +7,54 @@ function Navbar() {
       <div className="logo">
         <input type="checkbox" id="menu" name="menu" />
         <label htmlFor="menu" id="burger">
-          X
+          x
         </label>
-        <span className="logo-name"> Bingle Watch</span>
-
+        <span className="logo-name"> BingeWatch <i class="fa-solid fa-popcorn"></i></span>
+       
+       
         <ul class="links">
           <a href="/" target="_blank">
-            Downloads
+            TV
           </a>
           <a href="/" target="_blank">
-            Watchlist
+            Movies
           </a>
           <a href="/" target="_blank">
-            Channels
+            Sports
           </a>
           <a href="/" target="_blank">
-            Languages
+            News
           </a>
           <a href="/" target="_blank">
-            Genres
+            Premium
           </a>
-          <div className="search-bar">
+          <a href="/" target="_blank">
+            Watch+
+          </a>
+          <a href="/" id="kid" target="_blank">
+            Kids
+          </a>
+          <div className="search-bar ">
             <input
               type="text"
               className="mobile-search"
-              placeholder="Light year..."
-            />
+              placeholder="Light Year"
+            /><i class=" mobile-search fa-solid fa-magnifying-glass"></i>
           </div>
         </ul>
       </div>
+   
       <div className="search-bar">
-        <input type="text" className="desktop-search" placeholder="Search .." />
+        <input type="text" className="desktop-search" placeholder="Family Guy" /><i class=" desktop-search fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div className="login-subs">
+        <a href="/" className="subscribe login">
+          Login
+        </a>
+
+        <a href="/" className="subscribe">
+          Subscribe
+        </a>
       </div>
     </div>
   );

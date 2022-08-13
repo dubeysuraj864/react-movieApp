@@ -1,9 +1,11 @@
 import React from "react";
-// import "./style/Card.css"
+import "./Style/Card.css"
 
-function Card(){
+function Card(props){
     return(
-        <div className="card">Card</div>
+        <div className="card">
+                <img src={props.url} alt="" />
+        </div>
     )
 }
 

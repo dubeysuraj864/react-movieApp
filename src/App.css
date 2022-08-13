@@ -5,9 +5,9 @@
   text-align: center;
 }
 body{
-  background-color: #001;
-  color: white;
+  color: rgb(255, 255, 255);
  font-family: 'Poppins', sans-serif;
+ background: #002;
 }
 .carousel{
   margin: 20px 20px;
@@ -18,4 +18,28 @@ p{
   font-size: 30px;
   font-family: 'DynaPuff', cursive;
 }
+.cards{
+  margin: 20px 40px;
+  display: flex;
+  justify-content: left;
+  overflow-x: auto;
+  margin-bottom: 50px;
 
+}
+@media (max-width: 600px) {
+  .carousel{
+    margin: 20px 0px;
+  }
+  p{
+    margin-left: 0px;
+    text-align: center;
+  }
+  .cards{
+    margin: 0px;
+    display: flex;
+    justify-content: left;
+    overflow-x: auto;
+    margin-bottom: 50px;
+  
+  }
+}
