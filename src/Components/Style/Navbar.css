@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Lato:wght@300;400;900&family=Poppins:wght@100;200;300;400;500&family=Potta+One&display=swap');
+.navbar{
+    background-color: #003;
+    margin: 00px;
+    padding: 20px;
+    font-family: 'DynaPuff', cursive;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.logo{
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo-name{
+    margin-right: 40px;
+}
+#menu{
+    display: none;
+}
+.logo label{
+    font-size: 40px;
+    margin-right: 20px;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+}
+.links a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 10px 5px;
+    color: rgb(255, 255, 255);
+    transition: all .3s ease;
+}
+.links a:hover{
+    color: blue;
+}
+
+.search-bar input{
+    /* display: none; */
+    outline: none;
+    order: none;
+    font-size: 17px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .logo{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .links{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .links {
+        display: none;
+        /* display: flex;
+        flex-direction: column;
+        margin: auto; */
+        padding: 5px 50px;
+
+       
+    }
+    .logo-name{
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    #menu:checked ~ .links{
+        display: flex;
+        flex-direction: column;
+              /* display: none; */
+    }
+  }
