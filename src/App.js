@@ -9,6 +9,7 @@ function App() {
     <div className="App">
     <Navbar className="navbar"/>
     <Carousel className="carousel" />
+    <p>Latest & Trending</p>
     <Card className="Card" />
     </div>
   );

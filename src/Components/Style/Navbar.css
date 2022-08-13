@@ -25,12 +25,17 @@
 }
 .logo {
   font-size: 20px;
+  
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 .logo-name {
+  font-weight: 500;
+  font-size: 30px;
   margin-right: 40px;
+  color: rgb(255, 212, 119);
+  /* text-shadow: 2px 1px 1px #fff; */
 }
 #menu {
   display: none;
@@ -38,6 +43,9 @@
 .logo label {
   font-size: 40px;
   margin-right: 20px;
+  color: rgb(255, 212, 119);
+  font-size: 50px;
+  text-shadow: 3px 3px 0px #fff;
 }
 .links {
   display: flex;
@@ -46,8 +54,9 @@
 .links a {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
+  font-size: 16px;
   text-decoration: none;
-  margin: 10px 5px;
+  margin: 10px 10px;
   color: rgb(255, 255, 255);
   transition: all 0.3s ease;
 }
@@ -113,6 +122,7 @@
   .logo-name {
     margin-right: 0px;
     margin-bottom: 20px;
+    margin-top: 5px;
     /* position: absolute;
         left: auto;
         top: 25px; */
