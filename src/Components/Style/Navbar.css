@@ -319,3 +319,8 @@
 
 
 }
+@media (max-width: 600px) {
+#burger{
+  left: 10px;
+}
+}
