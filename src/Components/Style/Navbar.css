@@ -41,10 +41,8 @@
   display: none;
 }
 .logo label {
-  font-size: 40px;
   margin-right: 20px;
   color: rgb(255, 255, 255);
-  font-size: 50px;
 }
 .links {
   display: flex;
@@ -119,7 +117,63 @@
   margin-right: 10px;
 }
 
-@media (max-width: 600px) {
+.logo label {
+  position: relative;
+}
+.burger1,.burger2,.burger3{
+  width: 25px;
+  height: 5px;
+  background-color: #fff;
+  display: block;
+  margin: 5px 1px;
+  border-radius: 50px;
+}
+.burger2{
+  width: 35px;
+}
+#burger{
+  background-color: #004;
+  padding: 8px;
+}
+/* -------------------------------------------------- */
+
+@media (max-width: 1295px) {
+  .navbar {
+    background: #002;
+    padding: 0px;
+    font-family: "DynaPuff", cursive;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.329);
+  }
+  .logo-name {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  .burger1,.burger2,.burger3{
+    width: 25px;
+    height: 4px;
+    background-color: #fff;
+    display: block;
+    margin: 5px 1px;
+    border-radius: 50px;
+  }
+  .burger2{
+    width: 35px;
+  }
+  .login-subs{
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .login-subs{
+    display: block;
+  }
   .mobile-search {
     display: block;
   }
@@ -167,8 +221,8 @@
     left: 25px;
     font-size: 40px;
     color: #fff;
-  
   }
+
   a {
     color: #fff;
     transition: all 1s ease;
@@ -204,10 +258,49 @@
     animation: growDown 300ms ease-in-out forwards;
     transform-origin: top center;
   }
-  #menu:checked ~ #burger {
+
+  #menu:checked ~ label .burger2{
+    position: relative;
+    transition: all 1s ease;
+    transform: translateX(-300px);
+    position: absolute;
+    top: 22.5px;
+    width: 45px;
+    height: 5px;
+  
+    
+  }
+  #menu:checked ~ label .burger1{
+    transition: all .5s ease-in-out;
+    transform: rotate(45deg);
+    margin: 0px 0px;
+    position: absolute;
+    top: 25px;
+    width: 35px;
+    height: 5px;
+  }
+  #menu:checked ~ label .burger3{
+    width: 35px;
+    height: 5px;
+    transition: all .5s ease;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 20px;
+  }
+  #menu:checked ~   #burger{
+    background-color: rgba(0, 0, 68, 0);
+    padding: 8px;
+  }
+
+  #burger:hover{
+    background-color: #004;
+    padding: 8px;
+  }
+
+  /* #menu:checked ~ #burger {
     transition: all 1s ease;
     transform: rotate(360deg);
-  }
+  } */
   .login-subs{
     margin: 10px 10px 10px 10px;
   }
@@ -222,4 +315,7 @@
     top: px;
     left: 0px;
   }
+
+
+
 }

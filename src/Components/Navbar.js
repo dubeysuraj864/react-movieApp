@@ -7,7 +7,10 @@ function Navbar() {
       <div className="logo">
         <input type="checkbox" id="menu" name="menu" />
         <label htmlFor="menu" id="burger">
-          x
+          <span className="burger1"></span>
+          <span className="burger2"></span>
+          <span className="burger3"></span>
+
         </label>
         <span className="logo-name"> BingeWatch <i class="fa-solid fa-popcorn"></i></span>
        
