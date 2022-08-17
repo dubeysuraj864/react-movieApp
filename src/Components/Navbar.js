@@ -1,5 +1,7 @@
 import React from "react";
 import "./Style/Navbar.css";
+import { Link } from "react-router-dom";
+
 
 function Navbar() {
   return (
@@ -12,31 +14,18 @@ function Navbar() {
           <span className="burger3"></span>
 
         </label>
-        <span className="logo-name"> BingeWatch <i class="fa-solid fa-popcorn"></i></span>
+        <span className="logo-name">   <Link to="/">BingeWatch</Link> <i class="fa-solid fa-popcorn"></i></span>
        
        
         <ul class="links">
-          <a href="/" target="_blank">
-            TV
-          </a>
-          <a href="/" target="_blank">
-            Movies
-          </a>
-          <a href="/" target="_blank">
-            Sports
-          </a>
-          <a href="/" target="_blank">
-            News
-          </a>
-          <a href="/" target="_blank">
-            Premium
-          </a>
-          <a href="/" target="_blank">
-            Watch+
-          </a>
-          <a href="/" id="kid" target="_blank">
-            Kids
-          </a>
+        <Link to="/Action">Action</Link>
+        <Link to="/Adventure">Adventure</Link>
+        <Link to="/Comedy">Comedy</Link>
+        <Link to="/Horror">Horror</Link>
+        <Link to="/TvShows">TV shows</Link>
+        <Link to="/Sports">Sports</Link>
+    <Link id="kid" to="/kids">Kids</Link>
+            
           <div className="search-bar ">
             <input
               type="text"
