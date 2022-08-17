@@ -18,19 +18,20 @@ function Navbar() {
        
        
         <ul class="links">
-        <Link to="/Action">Action</Link>
-        <Link to="/Adventure">Adventure</Link>
-        <Link to="/Comedy">Comedy</Link>
-        <Link to="/Horror">Horror</Link>
-        <Link to="/TvShows">TV shows</Link>
-        <Link to="/Sports">Sports</Link>
-    <Link id="kid" to="/kids">Kids</Link>
+        {/* <Link to="/" className="home-route">Home</Link>
+        <Link to="/Action" className="action-route">Action</Link>
+        <Link to="/Adventure" className="adventure-route">Adventure</Link>
+        <Link to="/Comedy" className="comedy-route">Comedy</Link>
+        <Link to="/Horror" className="horror-route">Horror</Link>
+        <Link to="/TvShows" className="tvshows-route">TV shows</Link>
+        <Link to="/Sports" className="sports-route">Sports</Link>
+    <Link id="kid" to="/kids" className="kids-route">Kids</Link> */}
             
           <div className="search-bar ">
             <input
               type="text"
               className="mobile-search"
-              placeholder="Light Year"
+              placeholder="Multiverse of madness..."
             /><i class=" mobile-search fa-solid fa-magnifying-glass"></i>
           </div>
         </ul>
@@ -40,11 +41,7 @@ function Navbar() {
         <input type="text" className="desktop-search" placeholder="Family Guy" /><i class=" desktop-search fa-solid fa-magnifying-glass"></i>
       </div>
       <div className="login-subs">
-        <a href="/" className="subscribe login">
-          Login
-        </a>
-
-        <a href="/" className="subscribe">
+               <a href="/" className="subscribe">
           Subscribe
         </a>
       </div>

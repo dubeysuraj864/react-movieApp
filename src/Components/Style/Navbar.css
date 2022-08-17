@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Lato:wght@300;400;900&family=Poppins:wght@100;200;300;400;500&family=Potta+One&display=swap");
 .navbar {
   background: #002;
-  padding: 0px;
+  padding: 20px;
   font-family: "DynaPuff", cursive;
   display: flex;
   flex-direction: row;
@@ -35,9 +35,8 @@
   margin-right: 30px;
   color: rgb(255, 255, 255);
   font-family: "DynaPuff", cursive;
- 
 }
-.logo-name a{
+.logo-name a {
   text-decoration: none;
   color: #fff;
 }
@@ -59,7 +58,7 @@
   font-weight: 500;
   font-size: 16px;
   text-decoration: none;
-  margin: 10px 10px;
+  margin: 0px 0px;
   color: rgb(255, 255, 255);
   transition: all 0.3s ease;
 }
@@ -67,13 +66,13 @@
   color: rgb(236, 65, 100);
   font-weight: bold;
 }
-.search-bar{
+.search-bar {
   position: relative;
   display: flex;
   align-items: center;
   color: rgba(255, 255, 255, 0.363);
 }
-.search-bar i{
+.search-bar i {
   position: absolute;
   left: 12px;
 }
@@ -96,15 +95,6 @@
 .desktop-search {
   display: block;
 }
-
-#kid {
-  font-size: 20px;
-  font-weight: Bold;
-  color: rgb(220, 20, 60);
-}
-#kid:hover {
-  color: rgb(184, 0, 37);
-}
 .subscribe {
   font-family: "Poppins", sans-serif;
   padding: 10px 20px;
@@ -119,14 +109,16 @@
 .subscribe:hover {
   background-color: rgb(23, 80, 202);
 }
-.login{
+.login {
   margin-right: 10px;
 }
 
 .logo label {
   position: relative;
 }
-.burger1,.burger2,.burger3{
+.burger1,
+.burger2,
+.burger3 {
   width: 25px;
   height: 5px;
   background-color: #fff;
@@ -134,13 +126,47 @@
   margin: 5px 1px;
   border-radius: 50px;
 }
-.burger2{
+.burger2 {
   width: 35px;
 }
-#burger{
-  background-color: #004;
+#burger {
   padding: 8px;
 }
+/* 
+.home-route, .action-route, .adventure-route, .comedy-route, .horror-route, .tvshows-route, .sports-route, .kids-route{
+  background-size: cover;
+  background-position:center;
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+}
+
+.home-route{
+  background-image: url("https://file.pngbackground.com/uploads/preview/action-movie-poster-photo-editing-full-hd-background-11624668165e262abf78e.jpg");
+}
+.action-route{
+  background-image: url("https://file.pngbackground.com/uploads/preview/action-movie-poster-photo-editing-full-hd-background-11624668165e262abf78e.jpg");
+}
+.adventure-route{
+   background-image: url("https://rukminim1.flixcart.com/image/416/416/jqmnv680/poster/x/b/u/medium-pwl-the-jungle-book-2016-wall-poster-13-19-inches-matte-original-imaek7mygekn4zz6.jpeg?q=70");
+}
+.comedy-route{
+   background-image: url("https://m.media-amazon.com/images/M/MV5BMTkwNjAzOTk5OV5BMl5BanBnXkFtZTcwMzc0ODA4Nw@@._V1_.jpg");
+ }
+.horror-route{
+   background-image: url("https://idsb.tmgrup.com.tr/ly/uploads/images/2022/01/13/174639.jpg");
+ }
+.tvshows-route{
+    background-image: url("https://i.pinimg.com/originals/f4/0e/f6/f40ef66b6d077808e66766c3a766fce4.jpg");
+}
+.sports-route{
+  background-image: url("https://www.thewrap.com/wp-content/uploads/2017/11/breaking-away-reunion.jpg");
+}
+.kids-route{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9hYuh-AyI8zYekE-Uk48ldfzNGDXTiC5Umg&usqp=CAU");
+} */
+
+
 /* -------------------------------------------------- */
 
 @media (max-width: 1295px) {
@@ -160,7 +186,9 @@
     font-size: 20px;
     margin-right: 10px;
   }
-  .burger1,.burger2,.burger3{
+  .burger1,
+  .burger2,
+  .burger3 {
     width: 25px;
     height: 4px;
     background-color: #fff;
@@ -168,16 +196,16 @@
     margin: 5px 1px;
     border-radius: 50px;
   }
-  .burger2{
+  .burger2 {
     width: 35px;
   }
-  .login-subs{
+  .login-subs {
     display: none;
   }
 }
 
 @media (max-width: 1000px) {
-  .login-subs{
+  .login-subs {
     display: block;
   }
   .mobile-search {
@@ -189,6 +217,7 @@
   }
 
   .logo {
+    width: fit-content;
     display: flex;
     flex-direction: column;
   }
@@ -197,36 +226,27 @@
     justify-content: space-between;
     padding-bottom: 20px;
     user-select: none;
+    border-bottom: none;
   }
 
-  .links {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .links {
-    display: none;
-    padding: 5px 50px;
-    margin-top: 30px;
-    transition: all 1s ease;
-  }
+
   .logo-name {
-     font-weight: 500;
-    font-size: 20px;
-    margin-right: 0px;
-    margin-top: 15px;
-    padding: 20px ;
+    font-weight: 500;
+    font-size: 35px;
+    margin-left: 120px;
+    margin-top: 7px;
+    padding: 20px;
     color: #fff;
     font-family: "DynaPuff", cursive;
     
   }
   #burger {
     position: absolute;
-    top: 20px;
+    top: 18px;
     left: 25px;
     font-size: 40px;
     color: #fff;
+    
   }
 
   a {
@@ -235,98 +255,111 @@
   }
   .search-bar {
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 0px;
     position: relative;
+    top: 0px;
+    left: 10px;
+    margin: 0px;
   }
   .search-bar input {
-    outline: none;
-    order: none;
-    font-size: 17px;
-    padding: 10px 2px 10px 39px;
-    border: none;
-    outline: none;
-    background: rgba(255, 255, 255, 0.103);
-    color: #fff;
-    border-radius: 50px;
-    margin-top: 20px;
-    margin-bottom: 2px;
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0px;
+    width: 260px;
+    height: 30px;
+    margin-left: 0px;
+  }
+
   
-  }
-  #menu:checked ~ .links {
+  .links {
+    text-align: center;
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    animation: growDown 300ms ease-in-out forwards;
-    transform-origin: top center;
-  }
-  #menu:checked ~ .search-bar input {
-    display: block;
+    display: none;
+    padding: 5px 10px;
+    margin-top: 30px;
+    transition: all 1s ease;
     animation: growDown 300ms ease-in-out forwards;
     transform-origin: top center;
   }
 
-  #menu:checked ~ label .burger2{
+  #menu:checked ~ .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;  
+  }
+  .links a{
+    background-color: rgba(0, 191, 255, 0.424);
+    width: fit-content;
+    text-align: center;
+    padding: 20px;
+  }
+
+  label .burger2,label .burger1,label .burger3{
+    transition: all 0.3s ease-in-out;
+  }
+
+  #menu:checked ~ label .burger2 {
     position: relative;
-    transition: all 1s ease;
+    transition: all .0s ease;
     transform: translateX(-300px);
     position: absolute;
     top: 22.5px;
     width: 45px;
     height: 5px;
-  
-    
   }
-  #menu:checked ~ label .burger1{
-    transition: all .5s ease-in-out;
+  #menu:checked ~ label .burger1 {
+    transition: all 0.3s ease-in-out;
     transform: rotate(45deg);
     margin: 0px 0px;
     position: absolute;
-    top: 25px;
+    top: 23px;
     width: 35px;
     height: 5px;
   }
-  #menu:checked ~ label .burger3{
+  #menu:checked ~ label .burger3 {
     width: 35px;
     height: 5px;
-    transition: all .5s ease;
+    transition: all 0.3s ease;
     transform: rotate(-45deg);
     position: absolute;
-    top: 20px;
+    top: 18px;
   }
-  #menu:checked ~   #burger{
-    background-color: rgba(0, 0, 68, 0);
-    padding: 8px;
-  }
-
-  #burger:hover{
-    background-color: #004;
-    padding: 8px;
-  }
-
-  /* #menu:checked ~ #burger {
-    transition: all 1s ease;
-    transform: rotate(360deg);
-  } */
-  .login-subs{
+ 
+  .login-subs {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 4px;
+    right: -10px;
     margin: 10px 10px 10px 10px;
   }
-
-  .fa-solid{
-    position: absolute;
-    top: 30px;
-    left: 0px;
-  }
-  .fa-light{
-    position: absolute;
-    top: px;
-    left: 0px;
+  .subscribe{
+    border-radius: 0px;
+    display: none;
+    
   }
 
-
+  .fa-solid {
+    position: absolute;
+    top: 17.5px;
+    left: 2px;
+  }
+  .fa-light {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
 
 }
 @media (max-width: 600px) {
-#burger{
-  left: 10px;
-}
+  #burger {
+    left: 10px;
+  }
 }

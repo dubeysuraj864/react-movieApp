@@ -6,7 +6,7 @@
     justify-content: left;
     -webkit-scrollbar: none;
     -webkit-user-drag: auto;
-    margin: 20px;
+    margin: 10px;
     -webkit-user-drag: auto;
     user-select:none;
    
@@ -22,5 +22,8 @@
         justify-content: left;
         padding: 0px; 
         margin: 0px;
+    }
+    .cards .card{
+        margin-right: 5px;
     }
 }

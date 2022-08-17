@@ -35,7 +35,57 @@ h1,h2{
 html{
   scroll-behavior: smooth;
 }
+a{
+
+}
+.category{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.home-route, .action-route, .adventure-route, .comedy-route, .horror-route, .tvshows-route, .sports-route, .kids-route{
+  background-size: cover;
+  background-position:center;
+  object-fit: cover;
+  height: 44vh;
+  width: 33.3vw;
+  margin: 0;
+}
+
+.home-route{
+  background-image: url("https://file.pngbackground.com/uploads/preview/action-movie-poster-photo-editing-full-hd-background-11624668165e262abf78e.jpg");
+}
+.action-route{
+  background-image: url("https://wallpaperaccess.com/full/267479.jpg");
+}
+.adventure-route{
+   background-image: url("https://images4.alphacoders.com/728/728529.jpg");
+}
+.comedy-route{
+   background-image: url("https://www.inquirer.com/resizer/Mpxyl58ISlLR1Vr1Ni_HjhrP7Tk=/arc-anglerfish-arc2-prod-pmn/public/EJZIGLZ2O5DYBLC2CQK63VKXJU.jpg");
+ }
+.horror-route{
+   background-image: url("https://wallpaperaccess.com/full/235874.jpg");
+ }
+.tvshows-route{
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+    background-image: url("https://i0.wp.com/teamsbackground.net/wp-content/uploads/2020/04/Friends-TV-Show-Background-4.jpg?fit=1500%2C1000&ssl=1");
+}
+.sports-route{
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/333/1/232/team-real-madrid-real-madrid-team-wallpaper-preview.jpg");
+}
+.kids-route{
+  background-image: url("https://notlpubliclibrary.org/sites/default/files/2019-06/monsteruniv.jpg");
+}
 @media (max-width: 600px) {
+  h1,h2{
+    text-align: center;
+    margin-left: 0px;
+    font-family: 'DynaPuff', cursive;
+  }
   .carousel{
     margin: 20px 0px;
   }
