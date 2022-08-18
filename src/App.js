@@ -39,13 +39,13 @@ function App() {
         </div>
         <div className="cards">
           <Routes>
-            <Route path="/Sports" element={<Sports />} />
+            {/* <Route path="/Sports" element={<Sports />} />
             <Route path="/Kids" element={<Kids />} />
             <Route path="/Tvshows" element={<Tvshows />} />
             <Route path="Horror" element={<Horror />} />
             <Route path="/Comedy" element={<Comedy />} />
             <Route path="/Adventure" element={<Adventure />} />
-            <Route path="/Action" element={<Action />} />
+            <Route path="/Action" element={<Action />} /> */}
           </Routes>
         </div>
       </BrowserRouter>
