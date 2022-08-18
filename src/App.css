@@ -1,17 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Lato:wght@300;400;900&family=Poppins:wght@100;200;300;400;500&family=Potta+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&display=swap');
 .App {
- 
+ overflow: hidden;
   text-align: center;
 }
-
+::-webkit-scrollbar {
+  display: none;
+}
 body{
   color: rgb(255, 255, 255);
  font-family: 'Poppins', sans-serif;
  background: #002;
 }
 .carousel{
-  margin: 20px 20px;
+  margin: 10px 30px;
+  display: flex;
+  overflow: auto;
 }
 p{
   margin-left: 50px;
@@ -20,12 +24,12 @@ p{
   font-family: 'DynaPuff', cursive;
 }
 .cards{
-  margin: 20px 40px;
+  margin: 10px 20px;
   display: flex;
   justify-content: left;
   overflow-x: auto;
   margin-bottom: 50px;
-
+  padding: 10px;
 }
 h1,h2{
   text-align: left;
@@ -48,11 +52,30 @@ a{
   background-size: cover;
   background-position:center;
   object-fit: cover;
-  height: 44vh;
+  text-decoration: none;
+  font-size: 50px;
+  }
+.link{
+  background-size: cover;
+  background-position:center;
+  object-fit: cover;
+  height: 25vh;
   width: 33.3vw;
-  margin: 0;
+  margin: -1px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .5s ease;
+  padding: 0px;
+   font-family: 'DynaPuff', cursive;
+  backdrop-filter: brightness(70%);
 }
-
+.link:hover{
+  backdrop-filter: brightness(40%);
+}
 .home-route{
   background-image: url("https://file.pngbackground.com/uploads/preview/action-movie-poster-photo-editing-full-hd-background-11624668165e262abf78e.jpg");
 }
@@ -80,7 +103,11 @@ a{
 .kids-route{
   background-image: url("https://notlpubliclibrary.org/sites/default/files/2019-06/monsteruniv.jpg");
 }
+
 @media (max-width: 600px) {
+.link{
+  font-size: 20px;
+}
   h1,h2{
     text-align: center;
     margin-left: 0px;
@@ -94,7 +121,8 @@ a{
     text-align: center;
   }
   .cards{
-    margin: 0px;
+    margin: 5px;
+    padding: 5px;
     display: flex;
     justify-content: left;
     overflow-x: auto;

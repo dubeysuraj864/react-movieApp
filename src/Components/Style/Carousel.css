@@ -1,31 +1,27 @@
-.carousel{
-    /* /* margin: 20px; */
-    padding: 0px; 
-    display: flex;
-    
-    flex-direction: row;
-    overflow-x: auto;
-    justify-content: left;
-    -webkit-scrollbar: none;
-    -webkit-user-drag: auto;
-    margin-top: 20px;
-    /* flex-wrap: wrap; */
-    -webkit-user-drag: auto;
-    user-select:none;
-   
+.carousel {
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  justify-content: left;
+  -webkit-scrollbar: none;
+  -webkit-user-drag: auto;
+  margin-top: 20px;
+  -webkit-user-drag: auto;
+  user-select: none;
 }
 ::-webkit-scrollbar {
-    display: none;
-  }
-.carousel .poster{
-    padding: 20px;
-    margin: 20px;
-    box-shadow: 20px 02px 20px blue;
+  display: none;
+}
+.carousel .poster {
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 20px 02px 20px blue;
 }
 @media (max-width: 600px) {
-    .carousel{
-        justify-content: left;
-        padding: 0px; 
-        margin-top: 10px;
-    }
+  .carousel {
+    justify-content: left;
+    padding: 0px;
+    margin-top: 10px;
+  }
 }

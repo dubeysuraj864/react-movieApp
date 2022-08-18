@@ -16,25 +16,25 @@ function App() {
         <Navbar className="navbar" />
         <div className="category">
         <Link to="/Action" className="action-route">
-          Action
+          <div className="link">Action</div>
         </Link>
         <Link to="/Adventure" className="adventure-route">
-          Adventure
+          <div className="link">Adventure</div>
         </Link>
         <Link to="/Comedy" className="comedy-route">
-          Comedy
+          <div className="link">Comedy</div>
         </Link>
         <Link to="/Horror" className="horror-route">
-          Horror
+          <div className="link">Horror</div>
         </Link>
         {/* <Link to="/TvShows" className="tvshows-route">
           TV shows
         </Link> */}
         <Link to="/Sports" className="sports-route">
-          Sports
+          <div className="link">Sports</div>
         </Link>
         <Link id="kid" to="/kids" className="kids-route">
-          Kids
+          <div className="link">Kids</div>
         </Link>
         </div>
         <div className="cards">
@@ -50,7 +50,7 @@ function App() {
         </div>
       </BrowserRouter>
       <div className="home">
-        {/* <h1>Adventure</h1>
+        <h1>Adventure</h1>
         <Adventure />
         <h1>Comedy</h1>
         <Comedy />
@@ -63,10 +63,11 @@ function App() {
         <h1>TV Shows</h1>
         <Tvshows />
         <h1>Sports</h1>
-        <Sports /> */}
+        <Sports />
       </div>
     </div>
   );
 }
+
 
 export default App;

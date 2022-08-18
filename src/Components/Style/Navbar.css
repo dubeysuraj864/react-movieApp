@@ -10,7 +10,7 @@
   align-items: center;
   animation: growDown 300ms ease-in-out forwards;
   transform-origin: top center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.329);
+  margin-bottom: 20px;
 }
 @keyframes growDown {
   0% {
